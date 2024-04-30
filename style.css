@@ -298,7 +298,7 @@
   }
   
   /* Mobile Course */
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .course-box {
       width: 100%;
     }
