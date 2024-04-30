@@ -1,3 +1,51 @@
-h1 {
-    color: aqua;
-}
+/* Common styles for both Desktop and Mobile */
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 32px;
+  }
+  
+  .title-bar {
+    margin-left: 24px; 
+  }
+  
+  /* Styles for Desktop mode */
+  .Desktop {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Desktop a {
+    margin-right: 24px; 
+  }
+  
+  /* Styles for Mobile mode */
+  .Mobile {
+    display: none; 
+  }
+  
+  .Mobile a {
+    display: block;
+    margin-bottom: 16px; 
+  }
+  
+  /* Media query for Mobile mode */
+  @media screen and (max-width: 768px) {
+    .Desktop {
+      display: none; /* Hide Desktop navigation */
+    }
+  
+    .Mobile {
+      display: flex; /* Show Mobile navigation */
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .Mobile img {
+      height: 32px;
+    }
+  }
+  
